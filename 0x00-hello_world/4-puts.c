@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Main - Using puts function
+ *main -Entry point
  *
- *Return 0 if successful
+ *return: Always 0 (success)
  */
 int main(void)
 {
