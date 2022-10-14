@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main -start of code execution
+*Main - Start of code execution
 *
 *return: Always 0 (success)
 */

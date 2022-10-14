@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *Main : code entry
+ *Main - Using puts function
  *
  *Return 0 if successful
  */
