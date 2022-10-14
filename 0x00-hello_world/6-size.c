@@ -2,6 +2,7 @@
 /**
 *main -start of code execution
 *
+*return: Always 0 (success)
 */
 int main(void)
 {
