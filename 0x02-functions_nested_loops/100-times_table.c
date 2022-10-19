@@ -20,6 +20,7 @@ void print_times_table(int n)
 		{
 		for (x = 0 ; x <= n ; n++)
 		{
+			prod = (y * x);
 			if (x != 0)
 			{
 			_putchar(',');
