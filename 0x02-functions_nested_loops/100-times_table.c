@@ -1,31 +1,52 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 52 fibonacci numbers
+ * print_times_table - prints time table up to inputs
+ *
+ * Description: writes times table up to an input,
+ * not exceeding 15
+ *
+ *@n: size of the times table
  *
  * Return: Nothing!
  */
-int main(void)
+void print_times_table(int n)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	int y, x, prod;
 
-	while (i <50)
+	if (n <= 15 && n >= 0)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld", k);
-		else
+		for (y = 0 ; y <= n ; y++)
 		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
+		for (x = 0 ; x <= n ; n++)
+		{
+			if (x != 0)
+			{
+			_putchar(',');
+			_putchar(' ');
+			}
+			if (prod < 10 && x != 0)
+			{
+			_putchar(' ');
+			_putchar(' ');
+			_putchar((prod % 10) + '0');
+			}
+			else if (prod >= 100 && prod < 100)
+			{
+			_putchar(' ');
+			_putchar((prod / 10) + '0');
+			_putchar((prod % 10) + '0');
+			}
+			else if (prod >= 100 && x != 0)
+			{
+			_putchar((prod / 100) + '0');
+			_putchar((prod / 10) + '0');
+			_putchar((prod % 10) + '0');
+			}
+			else
+				_putchar((prod % 10) + '0');
 		}
-
-		i++;
+		_putchar('\n');
+		}
 	}
-
-	printf("\n");
-	return (0);
 }
