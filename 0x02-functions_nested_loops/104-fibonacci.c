@@ -2,12 +2,13 @@
 #define LARGEST 10000000000
 /**
  * main - main block
- * Description - finds and prints the first 98 fibonacci numbers starting with 1 and 2.
+ * Description - finds and prints the first 98,
+ * fibonacci numbers starting with 1 and 2.
  * Return: 0
  */
 int main(void)
 {
-	unsigned long int fr1= 0, bk1 = 1, fr2 = 0, bk2 = 2;
+	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
 	unsigned long int hold1, hold2, hold3;
 
 	int count;
