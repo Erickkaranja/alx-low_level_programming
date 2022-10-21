@@ -1,22 +1,20 @@
 #include "main.h"
 /**
  * print_triangle - prints triangles
+ * @size: Number of diagonal lines to be printed
  * Return: void
  */
 void print_triangle(int size)
 {
-	int n;
-
-	for (n = 1 ; n < size ; n++)
-	{
-		for (size = 1 ; size < n ; size++)
-		{
-			_putchar('#');
-
-			if (size = n - 1)
-				continue;
-		}
-
-	}
-	_putchar('\n');
+int row, column, k;
+if (size <= 0)
+_putchar('\n');
+for (row = 0 ; row < size ; row++)
+{
+for (column = size - row ; column > 1 ; column--)
+_putchar(' ');
+for (k = row + column ; k >= 1 ; k--)
+_putchar('#');
+_putchar('\n');
+}
 }
