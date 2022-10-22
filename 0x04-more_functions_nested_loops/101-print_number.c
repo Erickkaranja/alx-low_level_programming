@@ -2,11 +2,14 @@
 
 /**
  * print_number - prints a given integer
+ * @n: numbers to spring
  * Return: void
  */
+
 void print_number(int n)
 {
 if (n < 0)
+{
 _putchar('-');
 n *= -1;
 }
