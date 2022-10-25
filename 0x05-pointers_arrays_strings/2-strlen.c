@@ -3,7 +3,7 @@
 
 /**
  * _strlen - prints the length of a strig literal
- * @str: The string of length print
+ * @s: The string of length print
  * Return: length
  */
 
