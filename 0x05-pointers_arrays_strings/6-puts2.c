@@ -16,6 +16,6 @@ while (str[indx++])
 length++;
 }
 for (indx = 0 ; indx < length ; indx += 2)
-_putchar(str[index]);
+_putchar(str[indx]);
 _putchar('\n');
 }
