@@ -18,7 +18,7 @@ printf("%d", a[index]);
 if (index == n - 1)
 continue;
 
-printf(",");
+printf(", ");
 }		
 printf("\n");
 }
