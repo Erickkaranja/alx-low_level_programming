@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_buffer - prints a buffer
  * @b: buffer.
@@ -35,7 +35,7 @@ if (*(b + l) < 32 || *(b + l) > 126)
 printf("%c", '.');
 else
 printf("%c", *(b + l));
-			}
+}
 printf("\n");
 }
 }
