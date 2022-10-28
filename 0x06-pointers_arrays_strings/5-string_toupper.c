@@ -5,15 +5,17 @@
  */
 char *string_toupper(char *)
 {
-int index;
-char str;
-char *ptr;
-*ptr = &str;
+int index = 0;
+char *str;
 
-for (index = 97 ; index <= 122 ; index++)
+while (str[index])
 {
-str[index] = index - 32;
+if (str[index] >= 'a' && str[index] <= 'z')
+
+str[index] -= 32;
+index++;
 }
+return (str);
 }
 
 
