@@ -7,14 +7,10 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-int flag;
-int i;
-for (i = 0 ; s1[i] != '\0' || s2[i] != '\0' ; i++)
-if (s1[i] != s2[i])
-flag++;
-else
+while (*s1 && *s2 && *s1 == *s2)
 {
-flag = s1[i] - s2[i];
+s1++;
+s2++;
 }
-return (flag);
+return (*s1 - *s2);
 }
