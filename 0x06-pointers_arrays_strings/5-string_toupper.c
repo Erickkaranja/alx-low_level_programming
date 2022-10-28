@@ -3,10 +3,9 @@
  * _touppercase - coverts string to uppercase
  * Return: pointer to lower case string
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 int index = 0;
-char *str;
 
 while (str[index])
 {
