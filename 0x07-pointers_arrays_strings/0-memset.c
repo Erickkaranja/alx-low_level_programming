@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-_memset() - copies bytes b pointed to from *s
-@s:Memory pointed to 
-@b:The character to be filled
-Return: the pointerto s
+*_memset - copies bytes b pointed to from *s
+*@s:Memory pointed to
+*@b:The character to be filled
+*@n: number of times b should be placed
+*Return: the pointerto s
 */
 char *_memset(char *s, char b, unsigned int n)
 {
