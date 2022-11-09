@@ -4,9 +4,9 @@
 /**
 *create_array - 0creates an array of char and initializes
 *to a particular specific char
-@size: reserved bytes in memory
-@c: The value of character array
-Return: NULL if size=0 else pointer to c
+*@size: reserved bytes in memory
+*@c: The value of character array
+*Return: NULL if size=0 else pointer to c
 */
 
 char *create_array(unsigned int size, char c)
