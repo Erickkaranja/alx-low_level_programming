@@ -18,9 +18,14 @@ return (NULL);
 }
 for (index = 0 ; str[index] ; index++)
 length++;
-s = malloc (sizeof(char) * (length + 1));
+s = malloc(sizeof(char) * (length + 1));
+if (s == NULL)
+return (NULL);
 
-str[index] = s[index];
+for (index = 0 ; str[index] ; index++)
+s[index] = str[index];
+
+s[length] = '\0';
 
 return (s);
 
