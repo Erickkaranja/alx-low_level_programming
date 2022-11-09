@@ -4,9 +4,9 @@
 /**
 *alloc_grid - Returns a pointer to a two dimensional array of
 *integers with each element initialized to zer0
-*@
-*@
-*Return:
+*@width:  the width of the two dimensional array
+*@height: the height of the two dimensional array
+*Return:pointer to the two dimensional array else NULL
 */
 
 int **alloc_grid(int width, int height)
