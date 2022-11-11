@@ -35,7 +35,7 @@ length = 0;
 for (index = 0 ; s1[index] ; index++)
 s[length++] = s1[index];
 
-for (index = 0 ; s2[index] ; index++)
+for (index = 0 ; s2[index] && index < n ; index++)
 s[length++] = s2[index];
 
 s[length] = '\0';
