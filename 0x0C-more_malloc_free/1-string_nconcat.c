@@ -5,7 +5,7 @@
 *string_nconcat - concats two strings
 *@s1: The dest string
 *@s2: the source string
-*n: maximum bytes of s2 to concat on s1
+*@n: maximum bytes of s2 to concat on s1
 *Return: NULL if function fails pointer to the newly allocared string
 */
 
