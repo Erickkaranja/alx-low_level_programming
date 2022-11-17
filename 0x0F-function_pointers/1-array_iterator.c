@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 
-/*
+/**
 *array_iterator - a function that finds an integer
 *@array: where to search from
 *@size: Number of elements in the array
