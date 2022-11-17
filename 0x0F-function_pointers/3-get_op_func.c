@@ -5,7 +5,7 @@
 *get_op_func - selects the correct function to perform operation
 *		asked by user
 *@s: The operator passed as arguement.
-*Returns: A pointer to the function corresponding
+*Return: A pointer to the function corresponding
 *	to the operator given as parameter.
 */
 
@@ -19,7 +19,9 @@ op_t ops[] = {
 	{"%", op_mod},
 	{NULL, NULL}
 	};
+
 	int i = 0;
+
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 	i++;
 return (ops[i].f);
