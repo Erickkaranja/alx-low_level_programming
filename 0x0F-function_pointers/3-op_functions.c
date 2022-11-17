@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
 *op_add - adds two integers
+*@a: first integer
+*@b: second integer
 *Return: sum of a and b
 */
 
