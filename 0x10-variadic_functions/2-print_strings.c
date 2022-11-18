@@ -1,4 +1,4 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -22,15 +22,17 @@ va_start(strings, n);
 
 for (index = 0 ; index < n ; index++)
 {
-str = va_arg(strings, char *)
+str = va_arg(strings, char *);
 
 if (str == NULL)
+{
 printf("(nil)");
+}
 else
-printf("%s", str);
+	printf("%s", str);
 
 if (index != (n - 1) && separator != NULL)
-printf("%s", sepatator);
+printf("%s", separator);
 }
 printf("\n");
 
