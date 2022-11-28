@@ -7,6 +7,7 @@
 *@str: a malloc allocared string
 *@len: length of a the string
 */
+#include <stdlib.h>
 
 typedef struct list_s
 {
