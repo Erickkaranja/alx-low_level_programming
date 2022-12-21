@@ -8,16 +8,26 @@
 
 void print_number(int n)
 {
-unsigned int num = n;
+unsigned int i, j, count;
 
 if (n < 0)
 {
-_putchar('-');
-num = -num;
+	putchar(45);
+	i = -n;
 }
-if ((n / 10) > 0)
+else
 {
-print_number(n / 10);
+	i = n;
 }
-_putchar((n % 10) + '0');
+j = i;
+count = 1;
+while (j > 9)
+{
+j /= 10;
+count *= 10;
+}
+for (; count >= 1 ; count /= 10)
+{
+putchar(n / count % 10 + '0');
+}
 }
