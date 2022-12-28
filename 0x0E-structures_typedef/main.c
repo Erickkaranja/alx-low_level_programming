@@ -3,10 +3,11 @@
 
 int main()
 {
-struct dog my_dog;
+dog_t *my_dog;
 
-init_dog(&my_dog, "Lexxi", 12.00, "Karanja");
+my_dog = new_dog("lexxis", 14.00, "ommi");
 
-print_dog(&my_dog);
+printf("%s\n", my_dog->owner);
+
 return (0);
 }

@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- *dog_t - Typedef for struct dog
+ *dog_t - a typedef for struct dog
  */
 typedef struct dog dog_t;
 
