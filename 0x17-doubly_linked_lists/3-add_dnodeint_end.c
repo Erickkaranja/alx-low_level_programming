@@ -18,18 +18,17 @@ return (NULL);
 
 new->n = n;
 new->next = NULL;
-new->prev = *head;
 
 if (*head == NULL)
 (*head) = new;
+return (new);
 
-else
-{
 last = *head;
 while (last->next != NULL)
 last = last->next;
 
 last->next = new;
-}
-return (*head);
+new->prev = last;
+
+return (new);
 }
