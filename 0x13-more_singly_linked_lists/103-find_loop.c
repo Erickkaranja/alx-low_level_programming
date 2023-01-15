@@ -1,9 +1,10 @@
 #include "lists.h"
 /**
+* find_listint_loop - finds a loop in a linked list.
 *
+* @head: pointer to the kinked list.
 *
-*
-*
+* Return:The linked list with a loop else NULL.
 */
 
 listint_t *find_listint_loop(listint_t *head)
