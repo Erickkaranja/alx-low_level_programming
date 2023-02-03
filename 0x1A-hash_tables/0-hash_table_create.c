@@ -24,6 +24,7 @@ hash_table = malloc(sizeof(hash_table_t));
 
 	if (hash_table->array == NULL)
 		return (NULL);
-
+	for (i = 0 ; i < size ; i++)
+		ht->array[i] = NULL;
 return (hash_table);
 }
