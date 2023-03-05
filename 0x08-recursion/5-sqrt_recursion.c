@@ -9,19 +9,22 @@
 
 int find_sqrt(int num, int root)
 {
+	int i;
+
 	if ((root * root) == num)
 		return (root);
 
 	if (root == num / 2)
 		return (-1);
 
-	return (find_sqrt(num, root + 1));
+	i = (find_sqrt(num, root + 1));
+	return (i);
 }
 
 /**
 * _sqrt_recursion - finds square root of a number reculsively.
 * @n: The number.
-* @Return: Returns the square root of n.
+* Return: Returns the square root of n.
 */
 
 int _sqrt_recursion(int n)
