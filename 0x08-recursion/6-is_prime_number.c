@@ -4,8 +4,7 @@
 * is_divisible - checks the divisibility of a number.
 * @num: The number to be checked.
 * @div: the divisor.
-* Return: If the number is divisible - 0.
-          if the number is not divisible - 1.
+* Return: If the number is divisible - 0.else - 1.
 */
 int is_divisible(int num, int div)
 {
