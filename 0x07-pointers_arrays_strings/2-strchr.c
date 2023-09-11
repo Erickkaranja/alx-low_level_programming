@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 /**
 *_strchr - returns a pointer to first occurence of char
 *@s: The string to be checked
@@ -7,13 +9,13 @@
 */
 char *_strchr(char *s, char c)
 {
-unsigned int index;
-
-for (index = 0 ; s[index] <= '\0' ; index++)
-if (s[index] == c)
-{
-return (s + index);
-}
-else
-return ('\0');
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (char *) s;
+		}
+		s++;
+	}
+	return (NULL);
 }
